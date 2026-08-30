@@ -335,6 +335,18 @@ form .btn{width:100%}
   border:1px solid rgba(255,250,240,.32);color:inherit;transition:background-color .18s ease,color .18s ease,border-color .18s ease}
 .social-row a:hover{background:var(--bg);color:var(--brand-dark);border-color:var(--bg)}
 .social-row svg{width:20px;height:20px}
+/* ---------- Partner logos ----------
+   Sized to equal optical weight, not equal height: the three marks differ in
+   proportion and in ink density, so matching one dimension makes one shout. */
+.partners{padding-block:clamp(2.25rem,4.5vw,3.25rem);border-top:1px solid var(--line)}
+.partners .eyebrow{text-align:center;margin-bottom:1.4rem}
+.logo-row{display:flex;flex-wrap:wrap;align-items:center;justify-content:center;
+  gap:clamp(1.75rem,6vw,4rem);margin:0;padding:0;list-style:none}
+.logo-row a{display:grid;place-items:center;min-height:44px;padding:.4rem .5rem;
+  border-radius:var(--radius);opacity:.85;
+  transition:opacity .18s ease,transform .18s ease}
+.logo-row a:hover,.logo-row a:focus-visible{opacity:1;transform:translateY(-2px)}
+.logo-row img{display:block;height:auto}
 .cta-phone-num{font-family:var(--font-display);font-size:var(--fs-lg);font-weight:700;letter-spacing:var(--ls-head)}
 .cta-hours{font-size:var(--fs-sm);opacity:.82;margin:1.25rem 0 0}
 .cta-links{font-size:var(--fs-base);opacity:.9;margin:0}
@@ -538,27 +550,27 @@ form .btn{width:100%}
     </div>
     <div class="grid grid-2">
       <article class="card">
-        <figure class="card-media"><img src="svc-romance.jpg" alt="Beach picnic set for two with a white umbrella, a low wooden table, a grazing board and champagne at the water's edge" width="900" height="600" loading="lazy" decoding="async"></figure>
+        <figure class="card-media"><img src="svc-romance.jpg" alt="Beach picnic set for two under a white umbrella, with a low wooden table, a grazing board and champagne at the water&rsquo;s edge" width="900" height="600" loading="lazy" decoding="async"></figure>
       <h3>Proposals &amp; Romance</h3>
         <p>Sunset and under-the-stars setups for proposals, anniversaries and date nights. A styled low table or picnic seating, florals, and a curated board built for two.</p>
         <span class="incl"><b>Included</b>A charcuterie board and two gallons of fruit-infused water.</span>
         <span class="price">From $250</span>
       </article>
       <article class="card">
-        <figure class="card-media"><img src="svc-soiree.jpg" alt="Tiered dessert station with strawberry parfait cups, fruit skewers and cookies on gold stands" width="900" height="600" loading="lazy" decoding="async"></figure>
+        <figure class="card-media"><img src="svc-soiree.jpg" alt="Beach table setting with blue hydrangeas, gold candlesticks, shells and a woven charger by the water" width="900" height="600" loading="lazy" decoding="async"></figure>
       <h3>Birthdays &amp; Girls&rsquo; Soir&eacute;es</h3>
         <p>Birthdays, bachelorettes and girls&rsquo; soir&eacute;es. Larger seating, a bedazzling station, lawn games and a vinyl player with records worth arguing over.</p>
         <span class="incl"><b>Included</b>A charcuterie board and two gallons of fruit-infused water.</span>
         <span class="price">From $550</span>
       </article>
       <article class="card">
-        <figure class="card-media"><img src="svc-corporate.jpg" alt="Event table with grazing boards, tasting cups and a Gradiz Atelier collaboration sign" width="900" height="600" loading="lazy" decoding="async"></figure>
+        <figure class="card-media"><img src="svc-corporate.jpg" alt="Tiered dessert station with strawberry parfait cups, fruit skewers and cookies on gold stands" width="900" height="600" loading="lazy" decoding="async"></figure>
       <h3>Corporate &amp; Brand Events</h3>
         <p>Client appreciation, team gatherings and brand activations. Full food and beverage styling, statement florals and signage built to match your brand.</p>
         <span class="price">From $950</span>
       </article>
       <article class="card">
-        <figure class="card-media"><img src="svc-room.jpg" alt="Arrangement of coral and blush ranunculus, white anemones and eucalyptus beside a candlestick" width="900" height="600" loading="lazy" decoding="async"></figure>
+        <figure class="card-media"><img src="svc-room.jpg" alt="Room styled with red heart balloons, a large arrangement of red roses and tulips beside a sofa" width="900" height="600" loading="lazy" decoding="async"></figure>
       <h3>Room &amp; Suite Styling</h3>
         <p>Hotel rooms, Airbnbs and homes styled with balloons, fresh florals, candles and a custom banner &mdash; ready before they walk in the door.</p>
         <span class="price">From $150</span>
@@ -651,17 +663,17 @@ form .btn{width:100%}
   <div class="marquee" aria-label="Recent Gradiz Atelier events">
     <div class="marquee-track">
       <figure class="shot"><img src="work-charcuterie.jpg" alt="Charcuterie board with cured meats, cheeses, strawberries and grapes" width="900" height="1125" loading="lazy" decoding="async"></figure>
-      <figure class="shot"><img src="work-bouquet.jpg" alt="Bouquet of pink tulips, red garden roses, pink hyacinth and baby’s breath in a glass vase" width="900" height="1125" loading="lazy" decoding="async"></figure>
-      <figure class="shot"><img src="work-beach-picnic.jpg" alt="Beach picnic set for two with a white umbrella, a low wooden table, a grazing board and champagne at the water's edge" width="900" height="1125" loading="lazy" decoding="async"></figure>
+      <figure class="shot"><img src="work-event-table.jpg" alt="Jasmine Gradiz beside a Gradiz Atelier dessert and grazing table at a Bearcrumb collaboration event" width="900" height="1125" loading="lazy" decoding="async"></figure>
+      <figure class="shot"><img src="work-bouquet.jpg" alt="Bouquet of pink tulips, red garden roses, pink hyacinth and baby&rsquo;s breath in a glass vase" width="900" height="1125" loading="lazy" decoding="async"></figure>
+      <figure class="shot"><img src="work-beach-picnic.jpg" alt="Beach picnic set for two under a white umbrella with a low wooden table and a grazing board" width="900" height="1125" loading="lazy" decoding="async"></figure>
       <figure class="shot"><img src="work-florals.jpg" alt="Bouquet of white ranunculus and pink stock in a glass vase on a wooden table" width="900" height="1125" loading="lazy" decoding="async"></figure>
-      <figure class="shot"><img src="work-tablescape.jpg" alt="Close view of a beach tablescape with blue hydrangeas, gold candlesticks and shells" width="900" height="1125" loading="lazy" decoding="async"></figure>
       <figure class="shot"><img src="work-event.jpg" alt="Jasmine Gradiz with a guest holding a Gradiz Atelier bouquet at a styled event" width="900" height="1125" loading="lazy" decoding="async"></figure>
       <figure class="shot"><img src="work-beach-teepee.jpg" alt="Styled beach picnic with a linen teepee and low table on the sand in Miami" width="900" height="1125" loading="lazy" decoding="async"></figure>
       <figure class="shot"><img src="work-charcuterie.jpg" alt="Charcuterie board with cured meats, cheeses, strawberries and grapes" width="900" height="1125" loading="lazy" decoding="async"></figure>
-      <figure class="shot"><img src="work-bouquet.jpg" alt="Bouquet of pink tulips, red garden roses, pink hyacinth and baby’s breath in a glass vase" width="900" height="1125" loading="lazy" decoding="async"></figure>
-      <figure class="shot"><img src="work-beach-picnic.jpg" alt="Beach picnic set for two with a white umbrella, a low wooden table, a grazing board and champagne at the water's edge" width="900" height="1125" loading="lazy" decoding="async"></figure>
+      <figure class="shot"><img src="work-event-table.jpg" alt="Jasmine Gradiz beside a Gradiz Atelier dessert and grazing table at a Bearcrumb collaboration event" width="900" height="1125" loading="lazy" decoding="async"></figure>
+      <figure class="shot"><img src="work-bouquet.jpg" alt="Bouquet of pink tulips, red garden roses, pink hyacinth and baby&rsquo;s breath in a glass vase" width="900" height="1125" loading="lazy" decoding="async"></figure>
+      <figure class="shot"><img src="work-beach-picnic.jpg" alt="Beach picnic set for two under a white umbrella with a low wooden table and a grazing board" width="900" height="1125" loading="lazy" decoding="async"></figure>
       <figure class="shot"><img src="work-florals.jpg" alt="Bouquet of white ranunculus and pink stock in a glass vase on a wooden table" width="900" height="1125" loading="lazy" decoding="async"></figure>
-      <figure class="shot"><img src="work-tablescape.jpg" alt="Close view of a beach tablescape with blue hydrangeas, gold candlesticks and shells" width="900" height="1125" loading="lazy" decoding="async"></figure>
       <figure class="shot"><img src="work-event.jpg" alt="Jasmine Gradiz with a guest holding a Gradiz Atelier bouquet at a styled event" width="900" height="1125" loading="lazy" decoding="async"></figure>
       <figure class="shot"><img src="work-beach-teepee.jpg" alt="Styled beach picnic with a linen teepee and low table on the sand in Miami" width="900" height="1125" loading="lazy" decoding="async"></figure>
     </div>
@@ -670,6 +682,18 @@ form .btn{width:100%}
     <p class="strip-note">Hover or touch to pause.</p>
   </div>
 </section>
+<!-- ============================ PARTNERS ============================ -->
+<section class="partners">
+  <div class="wrap">
+    <p class="eyebrow">Collaborations</p>
+    <ul class="logo-row">
+        <li><a href="https://instagram.com/bearcrumbmiami" rel="noopener"><img src="partner-bearcrumb.png" alt="Bear Crumb Gluten Free Bakery" width="80" height="52" loading="lazy" decoding="async"></a></li>
+        <li><a href="https://instagram.com/thelabmiami" rel="noopener"><img src="partner-thelab.png" alt="The Lab Miami" width="107" height="49" loading="lazy" decoding="async"></a></li>
+        <li><a href="https://elevatedvision.today" rel="noopener"><img src="partner-elevatedvision.png" alt="Elevated Vision &mdash; strategy &amp; marketing, simplified" width="59" height="63" loading="lazy" decoding="async"></a></li>
+    </ul>
+  </div>
+</section>
+
 
 <!-- ============================ HOW IT WORKS ============================ -->
 <section class="sand">
